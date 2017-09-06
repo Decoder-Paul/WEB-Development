@@ -1,0 +1,149 @@
+
+
+.navbar-fixed {
+    height: 56px; !important
+}
+.nav-content{
+	background-color: black;
+	position: fixed;
+	width:100%;
+	z-index: 1000;
+}
+#sidenav-overlay {
+    position: fixed;
+    top: 56px;
+    left: 240px;
+    right: 0;
+    height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1001;
+    will-change: opacity;
+}
+a{
+	color: inherit;
+}
+ul a:hover li{
+	border-bottom-width:1px ;
+	border-right-style: solid;
+	border-right-color: rgb(227, 67, 67);
+	border-right-width:5px ;
+	color: rgb(252, 146, 146);
+	-webkit-transform: rotate(360deg);
+}
+.menu-icons{
+	position: relative;
+	float: left;
+	padding: 12px;
+	border-right-style: solid;
+	border-color: rgba(255,255,255,0.1);
+	border-right-width:1px ;
+}
+.menu-text{
+	padding-left: 75px;
+	font-family: inherit;
+	font-weight: bolder;
+}
+
+.side-nv li {
+	display: block;
+	line-height: 48px;
+	border-bottom-style: solid;
+	border-color: rgba(255,255,255,0.1);
+	border-bottom-width:1px ;
+	border-right-style: solid;
+	border-right-color: #6cb7d6;
+	border-right-width:5px ;
+	-webkit-transition: -webkit-transform 1s;
+}
+.side-nv {
+	padding-bottom: 60px;
+	left:0;
+    height: 100%;
+    width: 240px;
+    background-color:#212121;
+    position: fixed!important;
+    z-index: 1001;
+    overflow: auto;
+    margin-top: 56px;
+    color:lightgray;
+	top: 56px;
+    margin: 0;
+	will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+}
+
+@media only screen and (min-width: 600px){
+    .navbar-fixed, nav, nav #myNav{
+    height: 56px;
+    line-height: 56px;
+}	
+
+}
+@media only screen and (min-width: 992px){
+	.nav-content{
+		margin-left: 240px
+	}
+}
+}
+@media only screen and (min-width: 992px)
+{
+	.main{
+		margin-left:240px;
+	}
+}
+/*---- Navigation part done ----*/
+.main {
+	position: relative;
+	margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    top: 50px;
+}
+body{
+	background-color:floralwhite
+}
+canvas{
+   padding-right: 10px;
+	margin-bottom: 15px;
+}
+.card-content{
+	background-color: #6cb7d6;	
+}
+.card-title{
+	font-size:18px
+	!important;
+	font-weight: bold !important;
+	text-align: center;
+	margin-bottom: 0px !important;
+	color: white
+}
+.btn-floating.halfway-fab {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+.fixed-action-btn.horizontal {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    padding-top: 23px;
+    z-index: 998;
+}
+.fixed-action-btn.horizontal ul {
+	top:0%;
+	right:57px;
+}
+
+.card-content{
+	padding: 6px !important;
+	margin-bottom: 0px !important;
+}
+hr{
+	-webkit-margin-before: 0em
+}
