@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="http://owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+<link href="http://owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="http://owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
+<style>
+body {
+  background: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  max-width: 500px;
+  margin: 2px auto;
+  background: #353434;
+}
+
+.tab-content {
+  max-width: 500px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.owl-controls {
+  display: none;
+}
+
+li {
+  display: inline-block;
+  padding: 10px 20px;
+  white-space: nowrap;
+  transition: all 0.3s ease-in;
+  border-bottom: 4px solid transparent;
+}
+
+li:hover {
+  border-bottom: 4px solid white;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.tab-content > div {
+  display: none;
+}
+
+.tab-content > div.active {
+  display: block;
+}
+</style>
+	<script>
+//OWL Carousel
+$('.tabs').owlCarousel({
+    loop: true,
+    nav: false,
+    dots: false,
+    responsive: {
+      0:   {items: 2},
+      250: {items: 3},
+      400: {items: 4},
+      500: {items: 5}
+    }
+});
+
+//Tabs
+$('.tabs li a').click(function() {
+  var activeLink = $(this).data('target');
+  var targetTab = $('.tab.'+activeLink);
+  
+  targetTab.siblings().removeClass('active');
+  targetTab.addClass('active');
+});
+	</script>
+</head>
+<body>
+<ul class="tabs">
+  <li class="item"><a data-target="tab-one">Tab One</a></li>
+  <li class="item"><a data-target="tab-two">Tab Two</a></li>
+  <li class="item"><a data-target="tab-three">Tab Three</a></li>
+  <li class="item"><a data-target="tab-four">Tab Four</a></li>
+  <li class="item"><a data-target="tab-five">Tab Five</a></li>
+  <li class="item"><a data-target="tab-six">Tab Six</a></li>
+  <li class="item"><a data-target="tab-seven">Tab Seven</a></li>
+  <li class="item"><a data-target="tab-eight">Tab Eight</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab tab-one active">One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, iusto!</div>
+  <div class="tab tab-two">Two ipsum dolor sit amet, consectetur</div>
+  <div class="tab tab-three">Three</div>
+  <div class="tab tab-four">Four</div>
+  <div class="tab tab-five">Five</div>
+  <div class="tab tab-six">Six</div>
+  <div class="tab tab-seven">Seven</div>
+  <div class="tab tab-eight">Eight</div>
+</div>
+</body>
+	</html>

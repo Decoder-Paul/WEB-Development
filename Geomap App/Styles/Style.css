@@ -1,0 +1,180 @@
+/* Styling Navigation bar*/
+.row{
+	margin:0px;
+}
+nav.navbar{
+	margin:0;
+	padding: 0;
+	border-radius: 0px;
+	background-color: #910505;
+	z-index: 1;
+	width:100%;
+	position: fixed;
+}
+/* menu icon style*/
+.menu{
+    display: block;
+    width: auto;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(255,255,255,0.9)
+}
+nav.navbar ul li form{
+	align-content: center;
+	margin: 0;
+	padding: 10px 50px;
+}
+.input-group{
+	padding: 9px 14px;
+	outline: none;
+	font-size: 15px;
+}
+.input-group:focus{
+	outline: none !important;
+}
+/* For Search bar */
+.navbar .input-group .form-control{
+	outline: none !important;
+	width:100%;
+	padding: 4px 5px;
+	border: 1px solid black;
+	border-radius: 3px !important;
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	box-shadow: inset 3px 3px rgba(0,0,0,0.2) ;
+   background-color: rgba(255,255,255,0.2);
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	font-size: 15px;
+	color: white;
+	font-family: sans-serif;
+}
+/* Search Button*/
+.searchBtn{
+	border-left: transparent;
+	font-size: 20px;
+}
+/* all other buttons*/
+.btn{
+	border: 1px solid black;
+}
+/* For Login & signup rendering*/
+.login{
+	font-size: 15px;
+}
+#login{
+	padding: 10px;
+}
+#signup{
+	padding: 10px;
+}
+/*action redering*/
+.sidenav ul li a:hover{
+	background-color: black;
+}
+input::-webkit-input-placeholder {
+color: #cccccc !important;
+}
+
+.navbar .col-md-4 .input-group .form-control:focus{
+	-webkit-appearance:none !important;
+	outline: none !important;
+   box-shadow: inset 0 0 5px rgba(0,0,0,0.9);
+}
+/* Style for Side Navigation bar*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+	 text-align: center;
+	 font-size: 17px;
+    color: rgba(255,255,255,0.9);
+    display: block;
+    transition: 0.3s;
+	 border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #a96868;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+	border-bottom: 0px;!important
+}
+/*
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+*/
+/* Modal Content/Box */
+
+/* Modal Header*/
+.modal .modal-dialog .modal-content .modal-header .modal-title{
+	text-align: center;
+	font-family: 'Open Sans';
+	color: #46535e;
+	font-size:25px;
+}
+/* The Close Button */
+.close {
+      color:black !important;
+      text-align: center;
+      font-size: 30px;
+  }
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+.float_right{
+	float: right;
+}
+/* Modal Body*/
+.modal .modal-dialog .modal-content .modal-body form{
+	margin-bottom: 0em; !important
+	color:black;
+}
+
+/*Modal Footer*/
+.modal-footer{
+	border-top: 0px;
+	text-align: center;
+	padding: 0px;
+}
+.modal-footer p{
+	margin-bottom: 10px;
+}
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
